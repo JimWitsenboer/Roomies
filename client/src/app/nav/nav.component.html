@@ -1,0 +1,49 @@
+<header class="p-3 text-bg-dark">
+  <div class="container">
+    <div class="d-flex flex-wrap align-items-center justify-content-between">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-5 link-body-emphasis text-white">
+      <span class="fs-4">Roomies</span>
+      </a>
+      @if (loggedIn) {
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="#" class="nav-link px-2 text-secondary">Home</a>
+          </li> <li><a href="#" class="nav-link px-2 text-white">Matches</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Lists</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Messages</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+          <li><a class="nav-link px-2 text-white" role="button" (click)="logout()">Logout</a></li>
+        </ul>
+      }
+      @if (!loggedIn) {
+        <div class="d-flex">
+          <form #loginForm="ngForm" (ngSubmit)="login()" class="d-flex gap-2 me-md-5" role="search">
+            <input
+              type="search" [(ngModel)]="model.username"
+              class="form-control form-control" placeholder="Username"
+              name="username" aria-label="Username"
+            >
+            <input
+              type="search" [(ngModel)]="model.password"
+              class="form-control form-control" placeholder="Password"
+              type="password" aria-label="Password" name="password"
+            >
+            <button type="submit" class="btn btn-outline-light me-2">Login</button>
+          </form>
+          <div class="text-end">
+            <button type="button" class="btn btn-warning">Sign-up</button>
+          </div>
+        </div>
+      }
+      @if (loggedIn) {
+        <div dropdown class="dropdown">
+          <a dropdownToggle class="dropdown-toggle text-light text-decoration-none">Welcome user</a>
+          <div *dropdownMenu class="dropdown-menu">
+            <a class="dropdown-item">Edit profile</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item"role="button" (click)="logout()">Logout</a>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</header>
