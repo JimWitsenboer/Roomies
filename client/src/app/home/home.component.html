@@ -1,0 +1,20 @@
+<div class="container mt-5">
+  @if (!registerMode) {
+    <div class="text-center">
+      <h1>Find a roomie</h1>
+      <p class="lead">Create a profile to view your potential roomies.</p>
+      <div class="text-center">
+        <button (click)="registerToggle()" type="button" class="btn btn-success">Sign-up</button>
+      </div>
+    </div>
+  } @else {
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-4">
+          <app-register
+            (cancelRegister)="cancelRegisterMode($event)"></app-register>
+        </div>
+      </div>
+    </div>
+  }
+</div>

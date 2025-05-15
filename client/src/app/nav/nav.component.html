@@ -4,7 +4,7 @@
       <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-5 link-body-emphasis text-white">
       <span class="fs-4">Roomies</span>
       </a>
-      @if (loggedIn) {
+      @if (accountService.currentUser()) {
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
           <li><a href="#" class="nav-link px-2 text-secondary">Home</a>
           </li> <li><a href="#" class="nav-link px-2 text-white">Matches</a></li>
@@ -14,7 +14,7 @@
           <li><a class="nav-link px-2 text-white" role="button" (click)="logout()">Logout</a></li>
         </ul>
       }
-      @if (!loggedIn) {
+      @if (!accountService.currentUser()) {
         <div class="d-flex">
           <form #loginForm="ngForm" (ngSubmit)="login()" class="d-flex gap-2 me-md-5" role="search">
             <input
@@ -30,11 +30,11 @@
             <button type="submit" class="btn btn-outline-light me-2">Login</button>
           </form>
           <div class="text-end">
-            <button type="button" class="btn btn-warning">Sign-up</button>
+            <button type="button" class="btn btn-success">Sign-up</button>
           </div>
         </div>
       }
-      @if (loggedIn) {
+      @if (accountService.currentUser()) {
         <div dropdown class="dropdown">
           <a dropdownToggle class="dropdown-toggle text-light text-decoration-none">Welcome user</a>
           <div *dropdownMenu class="dropdown-menu">
