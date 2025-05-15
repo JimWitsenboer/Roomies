@@ -1,3 +1,11 @@
 .dropdown-toggle, .dropdown-item {
   cursor: pointer;
 }
+
+.nav-link.px-2 {
+  color: white;
+}
+
+.nav-link.px-2.active {
+  color: lightsalmon;
+}
