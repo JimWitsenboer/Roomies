@@ -10,8 +10,8 @@
             <li><a routerLink="/members" routerLinkActive="active" class="nav-link px-2">Matches</a></li>
             <li><a routerLink="/lists" routerLinkActive="active" class="nav-link px-2">Lists</a></li>
             <li><a routerLink="/messages" routerLinkActive="active" class="nav-link px-2">Messages</a></li>
-            <li><a class="nav-link px-2" role="button" (click)="logout()">Logout</a></li>
           }
+          <li><a routerLink="/errors" routerLinkActive="active" class="nav-link px-2">Errors</a></li>
         </ul>
 
       @if (!accountService.currentUser()) {
