@@ -315,3 +315,5 @@
 /Users/jim/code/roomies/API/bin/Debug/net9.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
 /Users/jim/code/roomies/API/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.dll
 /Users/jim/code/roomies/API/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/jim/code/roomies/API/bin/Debug/net9.0/Data/UserSeedData.json
+/Users/jim/code/roomies/API/bin/Debug/net9.0/AutoMapper.dll

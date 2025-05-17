@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "nU4192UZhC4=",
+  "dgSpecHash": "088gdkTsZWI=",
   "success": true,
   "projectFilePath": "/Users/jim/code/roomies/API/API.csproj",
   "expectedPackageFiles": [
+    "/Users/jim/.nuget/packages/automapper/14.0.0/automapper.14.0.0.nupkg.sha512",
     "/Users/jim/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/jim/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/9.0.5/microsoft.aspnetcore.authentication.jwtbearer.9.0.5.nupkg.sha512",
     "/Users/jim/.nuget/packages/microsoft.aspnetcore.openapi/9.0.4/microsoft.aspnetcore.openapi.9.0.4.nupkg.sha512",
