@@ -1,0 +1,17 @@
+.img-tumbnail {
+  margin: 25px;
+  inline-size: 85%;
+  block-size: 85%;
+}
+
+.card-body {
+  padding-inline: 25px;
+  padding-block: 0;
+}
+
+.card-footer {
+  padding-inline: 15px;
+  padding-block: 10px;
+  background-color: #fff;
+  border-block-start: none;
+}
