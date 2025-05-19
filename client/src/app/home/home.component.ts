@@ -1,7 +1,5 @@
-import { Component, inject, OnInit } from '@angular/core';
-import { AccountService } from '../_services/account.service';
+import { Component } from '@angular/core';
 import { RegisterComponent } from "../register/register.component";
-import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-home',
@@ -9,26 +7,11 @@ import { HttpClient } from '@angular/common/http';
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
-export class HomeComponent implements OnInit  {
-  accountService = inject(AccountService);
-  http = inject(HttpClient);
-  users: any;
+export class HomeComponent {
   registerMode = false
-
-  ngOnInit(): void {
-    this.getUsers();
-  }
 
   registerToggle() {
     this.registerMode = !this.registerMode
-  }
-
-  getUsers() {
-    this.http.get('https://localhost:5001/api/users').subscribe({
-      next: response => this.users = response,
-      error: error => console.log(error),
-      complete: () => console.log('Request completed'), // completes so no need to unsubscribe
-    })
   }
 
   cancelRegisterMode(event: boolean) {

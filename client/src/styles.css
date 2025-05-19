@@ -1,0 +1,18 @@
+Member tabs
+.tab-panel {
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.member-tabset > .nav-tabs > li.open .dropdown-menu, .member-tabset > .nav-tabs > li:hover .dropdown-menu {
+  margin-top: 0px;
+}
+
+.member-tabset > .nav-tabs > li.active {
+  position: relative;
+}
+
+.member-tabset > .tab-content {
+  margin-top: -3px;
+  padding: 15px 0;
+}
