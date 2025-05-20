@@ -484,3 +484,4 @@ $RECYCLE.BIN/
 *.swp
 API/roomies.db
 API/Data/Images/
+API/appsettings.json

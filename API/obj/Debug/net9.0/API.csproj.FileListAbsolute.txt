@@ -317,3 +317,5 @@
 /Users/jim/code/roomies/API/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 /Users/jim/code/roomies/API/bin/Debug/net9.0/Data/UserSeedData.json
 /Users/jim/code/roomies/API/bin/Debug/net9.0/AutoMapper.dll
+/Users/jim/code/roomies/API/bin/Debug/net9.0/CloudinaryDotNet.dll
+/Users/jim/code/roomies/API/bin/Debug/net9.0/Newtonsoft.Json.dll
